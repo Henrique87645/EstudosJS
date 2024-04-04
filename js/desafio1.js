@@ -9,7 +9,7 @@ let pessoa = {
 
 document.write(`<hr> <div class="pessoa">
         <p>Lutador: ${pessoa.lutador}</p>
-        <img src="../images/fedor-2015.jpg">
+        <img src="../images/desafio1/fedor-2015.jpg">
         <p>Nacionalidade: ${pessoa.nacionalidade}</p>
         <p>Idade: ${pessoa.idade} Anos</p>
         <p>Peso: ${pessoa.peso} Kg</p>

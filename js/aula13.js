@@ -1,26 +1,24 @@
 /* Aula 13 de JS sobre Estruturas de Repeticao */
 
 let carros = ['Fusca', 'Brasília', 'Gurgel']
-
 /* FOR = para faca */
+for (let i = 0; i < carros.length; i++) { //'carros.length' o numero de vetores dentro do meu array
+    document.write(`<li>${carros[i]}</li>`)
+}
 /* i = iterador, interacao ou index */
 for (let i = 1; i <= 5; i++) {
     document.write(i + " ")
 }
 
 for (let i = 5; i >= 1; i--) {
-    document.write(i + " ")
-}
-
-for (let i = 0; i < carros.length; i++) {
-    document.write(`<li>${carros[i]}</li>`)
+    document.write(i + " " )
 }
 
 /* FOREACH forEach = para cada */
 let frutas = ['Pera', 'Uva', 'Maçã', 'Banana', 'Melancia']
 
 frutas.forEach(function(fruta, i) {
-    document.write(`${i} ${fruta} <br>`)
+    document.write(`<li>${i} ${fruta}</li> `)
 })
 
 carros.forEach(function(carro) {
@@ -28,7 +26,6 @@ carros.forEach(function(carro) {
 })
 
 /* WHILE enquanto */
-
 // criar variavel de contador fora do laco
 let contador = 0
 
