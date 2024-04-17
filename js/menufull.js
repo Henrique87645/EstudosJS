@@ -1,4 +1,4 @@
-const drop_btn = document.querySelector(".drop-btn span");
+const drop_btn = document.querySelector(".drop-btn");
 const tooltip = document.querySelector(".tooltip");
 const menu_wrapper = document.querySelector(".wrapper");
 const menu_bar = document.querySelector(".menu-bar");
@@ -12,7 +12,8 @@ const help_bnt = document.querySelector(".back-help-bnt");
 drop_btn.addEventListener('click',()=>{
     menu_wrapper.classList.toggle("show")
     tooltip.classList.toggle("show")
-})
+    drop_btn.classList.toggle("open")
+});
 
 setting_item.onclick = (() => {
     menu_bar.style.marginLeft = "-400px";

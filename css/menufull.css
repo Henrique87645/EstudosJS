@@ -15,25 +15,49 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-nav .drop-btn{
+.drop-btn{
     width: 400px;
     background: #242526;
     border-radius: 5px;
     line-height: 55px;
     font-size: 20px;
     font-weight: 500;
-    color: #b0b3b8;
+    color: #18191a;
     padding: 0 20px;
 }
-nav .drop-btn span{
+.drop-btn span{
     float: right;
     line-height: 50px;
     font-size: 28px;
     cursor: pointer;
 }
-/* nav .drop-btn span{
-    transform: rotate(180deg);
-} */
+.drop-btn{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.drop-btn .arrow-dwn{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    color: #18191a;
+    font-size: 14px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.drop-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+
 nav .tooltip{
     position: absolute;
     right: 20px;
