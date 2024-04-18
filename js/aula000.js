@@ -19,9 +19,7 @@ while (tentativas < 3) {
             if (opcao < 1 || opcao > 4) {
                 console.log("Opcao incorreta");
                 break;
-            }
-        
-            if (opcao === 1) {
+            } if (opcao === 1)  {
                 const saque = parseFloat(readline.question("Digite o valor que deseja sacar R$ "));
                 if (saque <= 0 || saque > saldo) {
                     console.log("Valor inválido")
