@@ -25,7 +25,7 @@ while (tentativas < 3) {
                     console.log("Valor inválido")
                 } else {
                     saldo -= saque
-                    console.log(`Saque de R$ ${saque} realizado. Novo saldo bancario R$ ${saldo}`)
+                    console.log(`Saque de ${saque.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})} realizado. Novo saldo bancario ${saldo.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`)
                 }
 
             } else if (opcao === 2) {
@@ -34,7 +34,7 @@ while (tentativas < 3) {
                     console.log("Valor inválido");
                 } else {
                     saldo += deposito;
-                    console.log(`Depósito de R$ ${deposito} realizado. Novo saldo bancario R$${saldo}`);
+                    console.log(`Depósito de ${deposito.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})} realizado. Novo saldo bancario ${saldo.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`);
                 }
 
             } else if (opcao === 3) {
@@ -44,7 +44,7 @@ while (tentativas < 3) {
 
                 if (valorEmprestimo <= saldo / 3) {
                     saldo += valorEmprestimo;
-                    console.log(`Emprestimo aprovado, novo saldo de R$ ${saldo}. Novas parcelas de R$ ${valorParcela}`);
+                    console.log(`Emprestimo aprovado, novo saldo de ${saldo.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})} Novas parcelas de  ${valorParcela.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`);
                 } else {
                     console.log("Emprestimo reprovado");
                 }
