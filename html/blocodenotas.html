@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/blocodenotas.css">
+    <title>bloco de notas</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Bloco de Notas</h1>
+    </header>
+
+    <div class="notes-area">
+        <section id="notes-container"></section>
+        <section id="add-note">
+            <textarea id="note-content" placeholder="Crie anotações aqui"></textarea>
+            <button onclick="addNote()">Adicionar notas</button>
+        </section>
+        <section id="search-reminder">
+            <input type="text" id="search-input" placeholder="Suas notas...">
+            <button onclick="searchNotes()">Procurar</button>
+            <input type="datetime-local" id="reminder-input">
+            <button onclick="setReminder()">Definir lembrete</button>
+        </section>
+    </div>
+
+    <script src="/js/blocodenotas.js"></script>
+</body>
+</html>
