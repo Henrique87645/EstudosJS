@@ -22,22 +22,22 @@ const apiKey = "1cccd9617f90d1364fcad029cfd07fd2";
 
     switch (data.weather[0].main) {
         case "Clouds":
-            weatherIcon.src = "/images/cloudy.png";
+            weatherIcon.src = "./images/clima/cloudy.png";
             break;
         case "Clear":
-            weatherIcon.src = "/images/clear.png";
+            weatherIcon.src = "./images/clima/clear.png";
             break;
         case "Rain":
-            weatherIcon.src = "/images/rain.png";
+            weatherIcon.src = "./images/clima/rain.png";
             break;
         case "Drizzle":
-            weatherIcon.src = "/images/drizzle.png";
+            weatherIcon.src = "./images/clima/drizzle.png";
             break;
         case "Mist":
-            weatherIcon.src = "/images/mist.png";
+            weatherIcon.src = "./images/clima/mist.png";
             break;
         default:
-            weatherIcon.src = "/images/clear.png";
+            weatherIcon.src = "./images/clima/clear.png";
     }
 
     document.querySelector(".weather").style.display="block";
