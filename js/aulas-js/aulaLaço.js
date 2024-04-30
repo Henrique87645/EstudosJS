@@ -18,3 +18,10 @@ do {
 for(var c = 1; c <= 5; c++) {
     console.log('laço for '+c)
 }
+
+//----------------------------------
+let valores =[8, 9, 3, 5, 2, 7, 4, 1, 6,]
+valores.sort()
+for(var c in valores) {
+    console.log(`laço for in ${valores[c]}`)
+}
