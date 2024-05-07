@@ -1,0 +1,27 @@
+body {
+    font: normal 20px Arial;
+    background-color: aqua;
+}
+
+header {    
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px #181818;
+}
+section #flista {
+    width: 150px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
