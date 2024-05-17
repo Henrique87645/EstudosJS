@@ -7,5 +7,5 @@ for ( let i = 0; i < num; i++) {
     numeroanterior = numeroatual + numprox
     numeroatual = numprox
     numprox = numeroanterior
-    console.log(numeroatual)
+    console.log(numprox)
 }
